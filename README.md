@@ -10,7 +10,7 @@
 ```
 ### PASSO 02
 
- No Chatling.ai, depois de criado o seu chatbot, entre no Dashboard do projeto > Website widget. Selecione a opção Inline (Width: 100%; Height: 500px) e copie o código gerado. Após isso, vá na pasta Views > Chat > Index.cshtml e cole o código no arquivo.
+ No Chatling.ai (https://app.chatling.ai/), depois de criado o seu chatbot, entre no Dashboard do projeto > Website widget. Selecione a opção Inline (Width: 100%; Height: 500px) e copie o código gerado. Após isso, vá na pasta Views > Chat > Index.cshtml e cole o código no arquivo.
 
  ### PASSO 03
 
