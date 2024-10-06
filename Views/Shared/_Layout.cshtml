@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ColaBot</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ColaBot_Web.styles.css" asp-append-version="true" />
+
+    <link rel="icon" type="image/png" href="~/css/Images/Colabotlogo.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="~/css/Images/Colabotlogo.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="~/css/Images/Colabotlogo.png" sizes="48x48" />
+</head>
+<body style="background-color: #7480BF;">
+    <div class="container d-flex align-items-center justify-content-center" style="height: 90vh;">
+        <main role="main" class="pb-3 text-center">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        // Aguarda 3 segundos e depois remove o alerta
+        setTimeout(function () {
+            var alertElement = document.getElementById("alertMensagemErro");
+            if (alertElement) {
+                alertElement.style.transition = "opacity 0.5s";
+                alertElement.style.opacity = 0;
+                setTimeout(function () {
+                    alertElement.style.display = "none";
+                }, 500);
+            }
+        }, 3000); [[]
+    </script>
+</body>
+</html>

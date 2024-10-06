@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ColaBot Web.props" />
+</Project>

@@ -1,0 +1,49 @@
+﻿@model LoginModel
+
+@{
+    ViewData["Title"] = "Entrar";
+}
+
+<style>
+    .title {
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Estilo para o alerta */
+    .alert {
+        position: fixed; /* Torna o alerta fixo na tela */
+        top: 20px; /* Distância do topo */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta a posição para centralizar */
+        z-index: 1050; /* Garante que o alerta fique sobre outros elementos */
+        width: auto; /* Ajusta a largura */
+        max-width: 90%; /* Limita a largura máxima */
+    }
+</style>
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert" id="alertMensagemErro">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+<div class="text-center d-flex flex-column align-items-center" style="background-color: #7480BF; padding: 20px; width: 100%; max-width: 100rem; margin: auto;">
+    <img src="/css/Images/Colabotlogo.png" alt="ColaBot" draggable="false" class="img-fluid" style="margin: 2rem; max-width: 100%;">
+    <h1 class="display-4 title">ColaBot</h1>
+
+    <form asp-controller="Home" asp-action="Entrar" method="post" style="width: 150%;">
+        <div class="form-group mb-3">
+            <input type="email" asp-for="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu email">
+        </div>
+        <div class="form-group mb-3">
+            <input type="password" asp-for="Senha" class="form-control" id="exampleInputPassword1" placeholder="Insira sua senha">
+        </div>
+        <button type="submit" class="btn btn-light btn-block" style="width: 100%;">Entrar</button>
+    </form>
+
+    <small style="margin-top: 2rem;">Uso restrito a funcionários</small>
+</div>

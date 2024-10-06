@@ -1,0 +1,10 @@
+﻿@model UsuarioModel
+@using ColaBot_Web.Models
+
+<div class="container-fluid">
+    <a class="navbar-brand" style="color: #7480BF"><b>@Model.Nome</b></a>
+
+    <div class="d-sm-inline-flex justify-content-between">
+        <a class="btn btn-warning ms-auto" asp-controller="Chat" asp-action="Sair">Sair da conversa</a>
+    </div>
+</div>
