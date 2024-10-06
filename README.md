@@ -14,15 +14,15 @@
 
  ### PASSO 03
 
- No Visual Studio 2022, vá em Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciador de Pacotes e crie uma migration:
-  Add-Migration Usuarios
+ No Visual Studio 2022, vá em Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciador de Pacotes e crie uma migration: </br>
+  Add-Migration Usuarios </br>
   Update-Database
 
  ### PASSO 04
 
- Vá no SQL Server e insira um nome, email e senha na tabela Usuarios:
- INSERT INTO Usuarios VALUES
-('Geral', 'geral@colabot.com', '123456');
+ Vá no SQL Server e insira um nome, email e senha na tabela Usuarios: </br>
+ INSERT INTO Usuarios VALUES </br>
+('Geral', 'geral@colabot.com', '123456'); </br>
 
 select * from usuarios
 
