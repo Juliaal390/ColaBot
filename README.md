@@ -11,3 +11,20 @@
 ### PASSO 02
 
  No Chatling.ai, depois de criado o seu chatbot, entre no Dashboard do projeto > Website widget. Selecione a opção Inline (Width: 100%; Height: 500px) e copie o código gerado. Após isso, vá na pasta Views > Chat > Index.cshtml e cole o código no arquivo.
+
+ ### PASSO 03
+
+ No Visual Studio 2022, vá em Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciador de Pacotes e crie uma migration:
+  Add-Migration Usuarios
+  Update-Database
+
+ ### PASSO 04
+
+ Vá no SQL Server e insira um nome, email e senha na tabela Usuarios:
+ INSERT INTO Usuarios VALUES
+('Geral', 'geral@colabot.com', '123456');
+
+select * from usuarios
+
+
+
